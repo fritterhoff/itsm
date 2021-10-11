@@ -1,18 +1,65 @@
 \documentclass{cheatsheet}
-\title{Beispiel}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\title{IT-Sicherheit und IT-Sicherheitsmanagement}
 \IfFileExists{revision.tex}{\include{revision.tex}}{}
 \begin{document}
-    \section{Einleitung}
-    \begin{sectionbox}{Ziele der Vorlesung}
-        \begin{warningbox}{Wichtiger Inhalt}
+    \section{Einführung}
+    \begin{sectionbox}{Begrifflichkeiten \& Relevanz}
+        \begin{itemize}
+            \item ISMS: Teil eines Managementsystems
+            \begin{itemize}
+                \item Managementsystem: Rahmenwerk von Leitlinen, Verfahren, Richtlinen via Ressourcen
+                \item Abwägung von Geschäftsrisiken nach Entwicklung, Implementierung, Durchführung, Überwachung, Überprüfung, Instandhaltung und Verbesserung der Informationssicherheit
+            \end{itemize}
+        \end{itemize}
+        \begin{warningbox}{Schutzziele der Informationssicherheit}
+            \begin{itemize}
+                \item \textbf{C}onfidentiality: Geheimhaltung von Informationen
+                \item \textbf{I}ntegrity:Integrität von Informationen
+                \item \textbf{A}vailability: Verfügbarkeit von Informationen
+            \end{itemize}
         \end{warningbox}
-        \begin{hintbox}{Beispiel}
+        \begin{itemize}   
+            \item IT-Security-Pyramide: Top-Down-Ansatz via 
+            \begin{itemize}
+                \item ISP, Richtlinien (strategisch), Konzpete (operativ), Technologien (technisch)
+                \item gelebte Prozess auf Basis von Doku
+            \end{itemize}
+            \item Asset: (im)materialle Werte, wie z.B. Informationen, Soft- \& Hardware, Mitarbeitende, Patente, Image
+            \item Relevanz: Image, Kundenanforderung, IT-Angriffe, hohe Abhänigkeit von Geschäftsprozesse in IT
+            \item Konsequenzen: rechliche \& regulative Anforderungen, interne oder Anforderungen gegenüber Providern
+        \end{itemize}
+        \begin{hintbox}{Beispiel: Erhöhung Branchenstandards (TISAX)}
+            \begin{itemize}
+                \item Grund: Cyber-Versicherungen erhöhen Anforderungen
+                \item Öffentlichkeit regaiert sensibel --> hohe Relevanz 
+            \end{itemize}
         \end{hintbox}
     \end{sectionbox}
-    \begin{normbox}{Nicht nummerierte Box}
-        \begin{minted}[linenos]{java}
-if(a<=b)
-    return null;
-        \end{minted}
-    \end{normbox}
+    \begin{sectionbox}{Herausforderungen \& Lösungsansatz}
+        \begin{itemize}
+            \item Herausforderungen: ITSM angemessen?
+            \begin{itemize}
+                \item Erfüllung von rechtlichen Anforderungen? 
+                \item Größte Risikofaktoren für Geschäftsrisiken?
+            \end{itemize}
+            \item Lösungsansatz: Orientierung an Standards
+            \begin{itemize}
+                \item breites Spektrum von Technik bis Management
+                \item allgemein \& sektorspezifisch Zertifizierungen 
+                \item Kostensenkung: Interoperalität, Vereinheilichung, Nachvollziehbarkeit
+                \item Sicherheitsniveau: Aktualität durch zyklische (Wieder)-Bewertung, Stand der Technik
+                \item Wettbewerbsvorteile: Zertifizierung, Rechtssicherheit, Image, Vergabeverfahren
+            \end{itemize}
+        \end{itemize}
+    \end{sectionbox}
+    \begin{sectionbox}{Einblick in rechtliche Grundlagen}
+        \begin{itemize}
+            \item KWG: Festlegung angemessen Notfallkonzeptes
+            \item AktG: Überwachungssystem bezüglich Gefährdungen
+            \item KRITIS: Energie, IT \& Telekommunikation, Ernährung, Wasser, Gesundheit, Finanzen \& Versicherungen, Transport \& Verkehr
+        \end{itemize}
+    \end{sectionbox}
 \end{document}
+
